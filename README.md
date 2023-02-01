@@ -8,7 +8,7 @@ Front end to back end web design. Fullfill the requirment of
 - data delete
 - different view across tables
 - data sort, filt, and search
-Language: HTML, CSS, JSON, PHP, SQL, JavaScript
+Language: HTML, CSS, PHP, SQL, JavaScript
 
 ERD
 ![image](https://user-images.githubusercontent.com/122508304/215948976-75a25132-73c4-4da5-b799-cf59b348d55c.png)

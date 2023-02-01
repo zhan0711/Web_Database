@@ -1,0 +1,516 @@
+/*
+    Group Number: 6
+    Group Member: Yuan Zhang, Xiaoting Zheng, Xiangwu Dai
+    Date: , 2022
+    Section: CST 8285 section 302 Assignment 02
+    This is the style file.
+*/
+* {/* initialization */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.bgc{
+    background-color: rgb(215, 191, 164);
+}
+.headContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item1 h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: bisque;
+    text-align:center;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.item1 span{
+    text-transform: uppercase;
+    color:rgb(243, 184, 113);
+}
+.item2 button{
+    border-style: none;
+    background-color: transparent;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #412a12;
+    text-transform: capitalize;
+    text-decoration: underline;
+    align-items: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+.item2 span{
+    color: #412a12;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+/*ZXT-insert main into body to set the backgroundimg*/
+.picbg {
+    background-image: url("pics/logonBackground.jpg");
+    max-width: 1920px;
+    min-height: 900px;
+    position: relative;
+}
+/*ZXT-no sure whether can delete this section*/
+body main{
+    /*background: linear-gradient(to top left, rgb(229, 238, 235),rgb(145, 209, 202), rgb(229, 238, 235));*/
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+/* role page format */
+#roleWelcome {
+    display: flex;
+    justify-content: center;
+    font-size: 4.3rem;
+    padding-top: 180px;
+}
+#button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.roleButton{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 60px;
+    background-color: rgb(53, 139, 70);
+    color:antiquewhite;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-color: antiquewhite;
+}
+/* student & teacher login page style */
+.container{
+    position: absolute;
+    width: 60%;
+    height: fit-content;/*ZXT-change to fit-content*/
+    top:20%;
+    left: 20%;
+    border-style: solid 5px;
+    border-radius: 10px;
+    background-color:rgb(249, 244, 238);
+    border-color: rgb(53, 139, 70);
+    opacity: 0.8;
+    text-align: center;
+}
+.contextItem1{
+    text-align: center;
+    color: #885a2c;
+    font-size: 30px;
+    margin-top: 35px;
+}
+.contextItem1 span{
+    text-transform: uppercase;
+    color: rgb(92, 2, 2);
+    text-decoration: underline;
+}
+.header{
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    line-height:10px;
+    color: #885a2c;
+    padding: 50px;
+    text-transform: capitalize;
+}
+.formLogIn{
+    display: flex;
+    flex-direction: column;
+}
+.formLogIn input{
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding: 8px;
+    margin: 0 auto 0;
+    margin-bottom: 20px;
+}
+.formLogIn button{
+    background: rgb(212, 202, 202);
+    border: 0;
+    padding:  10px 10px;
+    color: #885a2c;
+    border-radius: 8px;
+    width: 230px;
+    font-size: 18px;
+    margin: 0 auto 0;
+}
+.msg{
+    text-align: center;
+    line-height: 50px;
+    color: #885a2c;
+    font-size: 20px;
+}
+.msg a{
+    text-transform: capitalize;
+}
+.btnLogin{
+    width: 246px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(53, 139, 70);
+    color:antiquewhite;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-color: antiquewhite;
+}
+.btnLogin:hover{
+    background-color: rgb(177, 209, 177);
+    cursor:pointer;
+}
+.btn{
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: rgb(177, 209, 177);
+}
+/* system style - student homepage */
+
+.sysHead {
+    background-color: rgb(80, 132, 96);
+    height: 150px;
+    opacity: 0.8;
+}
+.studentHP{
+    background-color: rgb(215, 191, 164);
+}
+.userMenu{
+    width: 200px;
+    background-color: rgb(80, 132, 96);
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+}
+.userMenu li a{
+    color:#482e13;
+    padding: 25px 0px;
+    padding-left: 20px;
+    display: block;
+    text-align: left;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+}
+.userMenu li:hover{
+    background-color: rgb(177, 209, 177);
+    cursor: pointer;
+}
+.gridC{
+    display: grid;
+    grid-template-columns: 250px 280px 200px 260px;
+}
+.item2HP{
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.studentHP{
+    font-size: 2.3rem;
+    margin-top: 6%;
+}
+.studentHP p{
+    padding-bottom: 18px;
+}
+.studentHP li{
+    font-size: 1.5rem;
+}
+.studentInstruction{
+    list-style: none;
+    line-height: 50px;
+    color: #412a12;
+    font-weight: bold;
+}
+.sl{
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+#ulid>:first-child{
+    font-weight: lighter;
+    font-size: 1.8rem;
+}
+
+/* student profile page style*/
+.studentHT{
+    position: relative;
+}
+table{
+    border-collapse: collapse;
+    line-height: 50px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+.tablePI{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+}
+.tableHH{
+    font-weight: bold;
+    width: 20%;
+}
+.actoion{
+    font-size: 1.0rem;
+}
+.proh{
+    font-size: 2.2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: solid 2px #3d444b;
+}
+/* student course style */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    gap: 20px;
+    padding-bottom: 10px;
+    padding-top:20px;
+    text-transform: capitalize;
+    width: 80%;
+}
+.search li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+#search-box {
+    border-radius: 5px;
+    background-color: #f1f2f4;
+    font:14px "microsoft Yahei";
+}
+.ss {
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: #d9c980;
+    color: #706039;
+    padding: 3px 10px 3px 10px;
+    border-color: #d9c980;
+}
+.ss:hover {
+    background-color: #decfcf;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.drop-down select {
+    background:#f1f2f4;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    width: 90px;
+    height: 28px;
+    padding: 6px 10px;
+    font: 14px "microsoft Yahei";
+    color:#706039;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid #f6f6f6;
+    z-index: 1;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop-down:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  border-top: 10px solid #706039;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  pointer-events: none;
+}
+.sortbtn {
+    background-color: #d9c980;
+    color: #706039;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #d9c980;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font: 17px "microsoft Yahei";
+    border-style: solid;
+    cursor: pointer;
+    word-spacing: 9px;
+}
+.sort-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f2f4;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(37, 11, 30, 0.2);
+    z-index: 50;
+}
+.sort-content a {
+    color: #7b4a0f;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+}
+.sort-content a:hover {
+    background-color: #e4d3d9;
+}
+.sort:hover .sort-content {
+    display: block;
+}
+.sort:hover .dropbtn {
+    background-color: #e4d3d9;
+}
+/* registration style */
+.listTitle{
+    display: inline-block;
+    float:inline-end;
+    width:230px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    padding-right: 30px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #301e0c;
+}
+.operations{
+    display: inline-block;
+    margin: 20px;
+    align-items: center;
+}
+.operations button{
+    text-transform: uppercase;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right:15px;
+    color: #301e0c;
+    font-weight: bold;
+    background-color: rgb(190, 190, 180);
+    border-radius: 8px;
+}
+#signUpHead{
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    color: #412a12;
+    padding-bottom: 12px;
+    padding-top: 18px;
+}
+.signUpTableContainer input{
+    border-radius: 5px;
+    height: 25px;
+}
+.operations button:hover{
+    background-color: rgb(124, 134, 134);
+}
+/* warning style*/
+.warning {
+    color:red;
+}
+.error {
+    border-color: red !important;
+}
+/* profile edit style */
+.SPcontent a{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+/*spedit style*/
+.SPcontent{
+    margin-top: 5%;
+    line-height: 50px;
+}
+.SPcontent a{
+    font-size: 1.6rem;
+}
+.pageEdit{
+    margin-top: 18px;
+}
+.PE{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.item2SHP{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.PE dd{
+    width: 300px;
+}
+.PE input{
+    width: 250px;
+    height: 28px;
+    background-color: #e4d3d9;
+    border-radius: 5px;
+}
+#operations{
+    width: 120px;
+    height: 30px;
+    background-color: rgb(59, 98, 85);
+    color: #decfcf;
+    border-radius: 5px;
+}
+.PEafter{
+    font-size: 1.5rem;
+    width: 80%;
+}
+.PEAtd {
+    font-weight: bold;
+}
+.courseList{
+    text-align: center;
+}
+.SCCL{
+    width: 80%;
+}
+.pageEdit p{
+    font-size: 1.6rem;
+}
+.item{
+    font-weight: bold;
+    padding-left: 30px;
+    font-style: italic;
+}
+.courseList button{
+    width: 55px;
+    background-color: #ccc5b3;
+    border-radius: 5px;
+}
+.studentInfoList{
+    width: 88%;
+}
+#search-box1{
+    width: 240px;
+    border-radius: 5px;
+    background-color: #f1f2f4;
+    font:14px "microsoft Yahei";
+}
+#addC{
+    padding-left: 3%;
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+
+}
